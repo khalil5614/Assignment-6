@@ -28,21 +28,16 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li>
-                <Link>Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link>Skills</Link>
-                <ul className="p-2">
-                  <li>
-                    <Link>Submenu 1</Link>
-                  </li>
-                  <li>
-                    <Link>Submenu 2</Link>
-                  </li>
-                </ul>
+                <Link to="/skills">Skills</Link>
               </li>
               <li>
-                <Link>Item 3</Link>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <Link to="/contact">Hire Me</Link>
               </li>
             </ul>
           </div>
@@ -116,7 +111,7 @@ const Navbar = () => {
               to="/contact"
               className={({ isActive }) =>
                 isActive
-                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 px-4 rounded-md shadow-md transform hover:scale-105 transition-all"
+                  ? "bg-gradient-to-r from-green-500 to-blue-700 text-white py-2 px-4 rounded-md shadow-md transform hover:scale-105 transition-all"
                   : "bg-gradient-to-r from-green-500 to-green-700 text-white py-2 px-4 rounded-md shadow-md transform hover:scale-105 transition-all"
               }
             >
