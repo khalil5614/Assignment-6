@@ -3,7 +3,10 @@ import React from "react";
 import { experiences } from "../../constants";
 const Experience = () => {
   return (
-    <div className=" mx-auto p-8 bg-gray-50 rounded-lg shadow-md">
+    <div
+      id="experience"
+      className=" mx-auto p-8 bg-gray-50 rounded-lg shadow-md"
+    >
       <h1 className="text-4xl text-center font-bold text-gray-800 mb-6">
         Experience
       </h1>

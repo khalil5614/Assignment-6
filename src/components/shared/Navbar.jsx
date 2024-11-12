@@ -112,6 +112,16 @@ const Navbar = () => {
             >
               Skills
             </NavLink>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 px-4 rounded-md shadow-md transform hover:scale-105 transition-all"
+                  : "bg-gradient-to-r from-green-500 to-green-700 text-white py-2 px-4 rounded-md shadow-md transform hover:scale-105 transition-all"
+              }
+            >
+              Hire Me
+            </NavLink>
           </ul>
         </div>
       </div>

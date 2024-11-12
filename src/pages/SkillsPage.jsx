@@ -1,6 +1,5 @@
 import React from "react";
 import { skillSet } from "../constants";
-import { FaMedium } from "react-icons/fa";
 
 // const SkillsPage = () => {
 //   return (
