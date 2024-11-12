@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <div>
       <Banner />
-      <div className="w-10/12 mx-auto space-y-4 mb-4">
+      <div className="w-full md:w-10/12 mx-auto space-y-4 mb-4 px-4">
         <AboutMe />
         <Education />
         <Experience />

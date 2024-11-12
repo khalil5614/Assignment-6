@@ -4,7 +4,7 @@ import { NavLink, Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 w-full md:w-10/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Navbar = () => {
                 <Link to="/projects">Projects</Link>
               </li>
               <li>
-                <Link to="/contact">Hire Me</Link>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>
@@ -45,38 +45,8 @@ const Navbar = () => {
             Ibrahim Khalil
           </Link>
         </div>
-        <div className="navbar-end hidden lg:flex">
+        <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 space-x-4">
-            {/* <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 px-4 rounded-md shadow-md"
-                  : "text-gray-800 py-2 px-4 hover:bg-blue-500 hover:text-white rounded-md"
-              }
-            >
-              Home
-            </NavLink>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                isActive
-                  ? "bg-blue-500 text-white py-2 px-4 rounded-md"
-                  : "text-gray-800 py-2 px-4 hover:bg-blue-500 hover:text-white rounded-md"
-              }
-            >
-              Projects
-            </NavLink>
-            <NavLink
-              to="/skills"
-              className={({ isActive }) =>
-                isActive
-                  ? "bg-blue-500 text-white py-2 px-4 rounded-md"
-                  : "text-gray-800 py-2 px-4 hover:bg-blue-500 hover:text-white rounded-md"
-              }
-            >
-              Skills
-            </NavLink> */}
             <NavLink
               to="/"
               className={({ isActive }) =>
@@ -109,6 +79,20 @@ const Navbar = () => {
             </NavLink>
             <NavLink
               to="/contact"
+              className={({ isActive }) =>
+                isActive
+                  ? "bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 px-4 rounded-md shadow-md transform hover:scale-105 transition-all"
+                  : "text-black text-base hover:bg-blue-500 hover:text-white py-2 px-4 rounded-md transition-all"
+              }
+            >
+              Contact
+            </NavLink>
+          </ul>
+        </div>
+        <div className="navbar-end  lg:flex">
+          <ul className="menu menu-horizontal px-1 space-x-4">
+            <NavLink
+              to="/hireme"
               className={({ isActive }) =>
                 isActive
                   ? "bg-gradient-to-r from-green-500 to-blue-700 text-white py-2 px-4 rounded-md shadow-md transform hover:scale-105 transition-all"
